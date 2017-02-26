@@ -13,13 +13,13 @@ function setup() {
   createCanvas(800, 600);
   noStroke();
   colors();
-  if (mouseButton == RIGHT){
+  if (mouseIsPressed === false){
     colors();
     draw();
   }
 } 
   function draw(){
-    if (mouseButton == LEFT){
+    if (mouseIsPressed === true){
       colors();
     }
   }
